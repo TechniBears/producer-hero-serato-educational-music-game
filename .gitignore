@@ -1,0 +1,12 @@
+node_modules/
+dist/
+tmp/
+output/
+.playwright-cli/
+.DS_Store
+*.log
+.env
+.env.*
+
+# Keep private planning notes local. Public docs belong in README.md.
+docs/**/*.md

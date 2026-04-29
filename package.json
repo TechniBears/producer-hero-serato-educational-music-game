@@ -1,0 +1,29 @@
+{
+  "name": "producer-hero-serato-educational-music-game",
+  "version": "0.1.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "description": "A Serato Studio-inspired educational music game designed around AlphaTheta SLAB and adaptable to other MIDI pad controllers.",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "node tools/dev-server.cjs",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "midi:list": "node tools/read-slab-midi.cjs --list",
+    "midi:listen": "node tools/read-slab-midi.cjs",
+    "hid:list": "node tools/read-slab.cjs --list",
+    "hid:listen": "node tools/read-slab.cjs",
+    "slab:midi:list": "node tools/read-slab-midi.cjs --list",
+    "slab:midi": "node tools/read-slab-midi.cjs"
+  },
+  "dependencies": {
+    "midi": "^2.0.0",
+    "node-hid": "^3.3.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "vite": "^8.0.10"
+  }
+}
